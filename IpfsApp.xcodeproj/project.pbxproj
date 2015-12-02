@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB9C73451BF0E19800B5EFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C73441BF0E19800B5EFAD /* AppDelegate.swift */; };
+		AB9C73471BF0E19800B5EFAD /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C73461BF0E19800B5EFAD /* Document.swift */; };
+		AB9C734A1BF0E19900B5EFAD /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9C73481BF0E19900B5EFAD /* Document.xib */; };
+		AB9C734C1BF0E19900B5EFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9C734B1BF0E19900B5EFAD /* Assets.xcassets */; };
+		AB9C734F1BF0E19900B5EFAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9C734D1BF0E19900B5EFAD /* MainMenu.xib */; };
+		AB9C73671BF0E79100B5EFAD /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73561BF0E6E200B5EFAD /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C73681BF0E7AC00B5EFAD /* SwiftBase58.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73571BF0E6E200B5EFAD /* SwiftBase58.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C73691BF0E7AC00B5EFAD /* SwiftGMP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73581BF0E6E200B5EFAD /* SwiftGMP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C736A1BF0E7AC00B5EFAD /* SwiftHex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73591BF0E6E200B5EFAD /* SwiftHex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C736B1BF0E7AC00B5EFAD /* SwiftIpfsApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C735A1BF0E6E200B5EFAD /* SwiftIpfsApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C736C1BF0E7AC00B5EFAD /* SwiftMultiaddr.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C735B1BF0E6E200B5EFAD /* SwiftMultiaddr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C736D1BF0E7AC00B5EFAD /* SwiftMultihash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C735C1BF0E6E200B5EFAD /* SwiftMultihash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB9C736E1BF0E7AC00B5EFAD /* VarInt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C735D1BF0E6E200B5EFAD /* VarInt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB9C73661BF0E77A00B5EFAD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB9C73681BF0E7AC00B5EFAD /* SwiftBase58.framework in CopyFiles */,
+				AB9C73691BF0E7AC00B5EFAD /* SwiftGMP.framework in CopyFiles */,
+				AB9C736A1BF0E7AC00B5EFAD /* SwiftHex.framework in CopyFiles */,
+				AB9C736B1BF0E7AC00B5EFAD /* SwiftIpfsApi.framework in CopyFiles */,
+				AB9C736C1BF0E7AC00B5EFAD /* SwiftMultiaddr.framework in CopyFiles */,
+				AB9C736D1BF0E7AC00B5EFAD /* SwiftMultihash.framework in CopyFiles */,
+				AB9C736E1BF0E7AC00B5EFAD /* VarInt.framework in CopyFiles */,
+				AB9C73671BF0E79100B5EFAD /* Base32.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB9C73411BF0E19800B5EFAD /* IpfsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IpfsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9C73441BF0E19800B5EFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB9C73461BF0E19800B5EFAD /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		AB9C73491BF0E19900B5EFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		AB9C734B1BF0E19900B5EFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB9C734E1BF0E19900B5EFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AB9C73501BF0E19900B5EFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9C73561BF0E6E200B5EFAD /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/Mac/Base32.framework; sourceTree = "<group>"; };
+		AB9C73571BF0E6E200B5EFAD /* SwiftBase58.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftBase58.framework; path = Carthage/Build/Mac/SwiftBase58.framework; sourceTree = "<group>"; };
+		AB9C73581BF0E6E200B5EFAD /* SwiftGMP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGMP.framework; path = Carthage/Build/Mac/SwiftGMP.framework; sourceTree = "<group>"; };
+		AB9C73591BF0E6E200B5EFAD /* SwiftHex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHex.framework; path = Carthage/Build/Mac/SwiftHex.framework; sourceTree = "<group>"; };
+		AB9C735A1BF0E6E200B5EFAD /* SwiftIpfsApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftIpfsApi.framework; path = Carthage/Build/Mac/SwiftIpfsApi.framework; sourceTree = "<group>"; };
+		AB9C735B1BF0E6E200B5EFAD /* SwiftMultiaddr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMultiaddr.framework; path = Carthage/Build/Mac/SwiftMultiaddr.framework; sourceTree = "<group>"; };
+		AB9C735C1BF0E6E200B5EFAD /* SwiftMultihash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMultihash.framework; path = Carthage/Build/Mac/SwiftMultihash.framework; sourceTree = "<group>"; };
+		AB9C735D1BF0E6E200B5EFAD /* VarInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VarInt.framework; path = Carthage/Build/Mac/VarInt.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB9C733E1BF0E19800B5EFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB9C73381BF0E19800B5EFAD = {
+			isa = PBXGroup;
+			children = (
+				AB9C73431BF0E19800B5EFAD /* IpfsApp */,
+				ABB8621B1BF0E85300C62D43 /* Frameworks */,
+				AB9C73421BF0E19800B5EFAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9C73421BF0E19800B5EFAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C73411BF0E19800B5EFAD /* IpfsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9C73431BF0E19800B5EFAD /* IpfsApp */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C73441BF0E19800B5EFAD /* AppDelegate.swift */,
+				AB9C73461BF0E19800B5EFAD /* Document.swift */,
+				AB9C73481BF0E19900B5EFAD /* Document.xib */,
+				AB9C734B1BF0E19900B5EFAD /* Assets.xcassets */,
+				AB9C734D1BF0E19900B5EFAD /* MainMenu.xib */,
+				AB9C73501BF0E19900B5EFAD /* Info.plist */,
+			);
+			path = IpfsApp;
+			sourceTree = "<group>";
+		};
+		ABB8621B1BF0E85300C62D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C73561BF0E6E200B5EFAD /* Base32.framework */,
+				AB9C73571BF0E6E200B5EFAD /* SwiftBase58.framework */,
+				AB9C73581BF0E6E200B5EFAD /* SwiftGMP.framework */,
+				AB9C73591BF0E6E200B5EFAD /* SwiftHex.framework */,
+				AB9C735A1BF0E6E200B5EFAD /* SwiftIpfsApi.framework */,
+				AB9C735B1BF0E6E200B5EFAD /* SwiftMultiaddr.framework */,
+				AB9C735C1BF0E6E200B5EFAD /* SwiftMultihash.framework */,
+				AB9C735D1BF0E6E200B5EFAD /* VarInt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB9C73401BF0E19800B5EFAD /* IpfsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9C73531BF0E19900B5EFAD /* Build configuration list for PBXNativeTarget "IpfsApp" */;
+			buildPhases = (
+				AB9C733D1BF0E19800B5EFAD /* Sources */,
+				AB9C733E1BF0E19800B5EFAD /* Frameworks */,
+				AB9C733F1BF0E19800B5EFAD /* Resources */,
+				AB9C73661BF0E77A00B5EFAD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IpfsApp;
+			productName = IpfsApp;
+			productReference = AB9C73411BF0E19800B5EFAD /* IpfsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB9C73391BF0E19800B5EFAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Teo Sartori";
+				TargetAttributes = {
+					AB9C73401BF0E19800B5EFAD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = AB9C733C1BF0E19800B5EFAD /* Build configuration list for PBXProject "IpfsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB9C73381BF0E19800B5EFAD;
+			productRefGroup = AB9C73421BF0E19800B5EFAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9C73401BF0E19800B5EFAD /* IpfsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9C733F1BF0E19800B5EFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9C734C1BF0E19900B5EFAD /* Assets.xcassets in Resources */,
+				AB9C734A1BF0E19900B5EFAD /* Document.xib in Resources */,
+				AB9C734F1BF0E19900B5EFAD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB9C733D1BF0E19800B5EFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9C73471BF0E19800B5EFAD /* Document.swift in Sources */,
+				AB9C73451BF0E19800B5EFAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB9C73481BF0E19900B5EFAD /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB9C73491BF0E19900B5EFAD /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		AB9C734D1BF0E19900B5EFAD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB9C734E1BF0E19900B5EFAD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB9C73511BF0E19900B5EFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB9C73521BF0E19900B5EFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB9C73541BF0E19900B5EFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = IpfsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Terminal-Glow.IpfsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB9C73551BF0E19900B5EFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = IpfsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Terminal-Glow.IpfsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB9C733C1BF0E19800B5EFAD /* Build configuration list for PBXProject "IpfsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9C73511BF0E19900B5EFAD /* Debug */,
+				AB9C73521BF0E19900B5EFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9C73531BF0E19900B5EFAD /* Build configuration list for PBXNativeTarget "IpfsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9C73541BF0E19900B5EFAD /* Debug */,
+				AB9C73551BF0E19900B5EFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB9C73391BF0E19800B5EFAD /* Project object */;
+}
