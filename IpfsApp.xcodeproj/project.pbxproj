@@ -12,7 +12,6 @@
 		AB9C734A1BF0E19900B5EFAD /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9C73481BF0E19900B5EFAD /* Document.xib */; };
 		AB9C734C1BF0E19900B5EFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9C734B1BF0E19900B5EFAD /* Assets.xcassets */; };
 		AB9C734F1BF0E19900B5EFAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9C734D1BF0E19900B5EFAD /* MainMenu.xib */; };
-		AB9C73671BF0E79100B5EFAD /* Base32.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73561BF0E6E200B5EFAD /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB9C73681BF0E7AC00B5EFAD /* SwiftBase58.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73571BF0E6E200B5EFAD /* SwiftBase58.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB9C73691BF0E7AC00B5EFAD /* SwiftGMP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73581BF0E6E200B5EFAD /* SwiftGMP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB9C736A1BF0E7AC00B5EFAD /* SwiftHex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB9C73591BF0E6E200B5EFAD /* SwiftHex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,7 +35,6 @@
 				AB9C736C1BF0E7AC00B5EFAD /* SwiftMultiaddr.framework in CopyFiles */,
 				AB9C736D1BF0E7AC00B5EFAD /* SwiftMultihash.framework in CopyFiles */,
 				AB9C736E1BF0E7AC00B5EFAD /* VarInt.framework in CopyFiles */,
-				AB9C73671BF0E79100B5EFAD /* Base32.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +142,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Teo Sartori";
 				TargetAttributes = {
 					AB9C73401BF0E19800B5EFAD = {
@@ -223,13 +221,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -256,6 +262,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -267,13 +274,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -292,6 +307,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
